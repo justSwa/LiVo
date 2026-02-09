@@ -1,0 +1,8 @@
+{
+  "name": "LiVo - Your Proactive Life Assistant",
+  "description": "An intelligent personal life assistant that connects the fragmented pieces of your life—tasks, goals, relationships, and health—into one proactive system.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

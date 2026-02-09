@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiVo - Your Tranquil Life Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap');
+    
+    :root {
+      --app-accent: #d4a5a5;
+      --app-accent-deep: #a67c7c;
+      --app-accent-light: #f5ebeb;
+      --app-bg: #faf7f7;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--app-bg);
+      font-size: 17px;
+      transition: background-color 0.5s ease;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    /* Theme-aware utilities */
+    .bg-accent { background-color: var(--app-accent); }
+    .text-accent { color: var(--app-accent); }
+    .border-accent { border-color: var(--app-accent); }
+    .bg-accent-light { background-color: var(--app-accent-light); }
+    .text-accent-deep { color: var(--app-accent-deep); }
+    .ring-accent-light { --tw-ring-color: var(--app-accent-light); }
+
+    .text-stone-900 { color: #1c1917; }
+    .text-stone-800 { color: #292524; }
+    .text-stone-700 { color: #44403c; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-stone-800">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+<!-- Google Calendar API -->
+<script src="https://apis.google.com/js/api.js"></script>
+</body>
+</html>
